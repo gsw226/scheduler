@@ -1,41 +1,97 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# ===== Flutter / Dart =====
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
 
-# dependencies
-node_modules/
+# Dart generated files
+*.g.dart
+*.freezed.dart
 
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+# ===== macOS / 공통 =====
+.DS_Store
+*.pem
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
+# ===== IDE =====
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+xcuserdata/
+
+# ===== iOS / macOS (Xcode) =====
+**/dgph
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+**/*sync/
+.sconsign.dblite
+.tags*
+**/.vagrant/
+**/DerivedData/
+Icon?
+**/Pods/
+**/.symlinks/
+profile
+**/.generated/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Flutter/flutter_export_environment.sh
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+macos/Flutter/ephemeral/
+macos/**/Pods/
+
+# Xcode 예외
+!default.mode1v3
+!default.mode2v3
+!default.pbxuser
+!default.perspectivev3
+
+# 보안 파일
 *.p8
 *.p12
 *.key
 *.mobileprovision
 
-# Metro
-.metro-health-check*
+# ===== Android =====
+android/gradle-wrapper.jar
+android/.gradle/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/GeneratedPluginRegistrant.java
+android/.cxx/
+android/key.properties
+android/**/*.keystore
+android/**/*.jks
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# ===== Linux =====
+linux/flutter/ephemeral/
 
-# macOS
-.DS_Store
-*.pem
+# ===== Windows =====
+windows/flutter/ephemeral/
+x64/
+x86/
+*.[Cc]ache
+!*.[Cc]ache/
 
-# local env files
+# ===== Web =====
+web/node_modules/
+
+# ===== 환경변수 =====
+.env
 .env*.local
-
-# typescript
-*.tsbuildinfo
-
-# generated native folders
-/ios
-/android
